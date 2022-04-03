@@ -6,7 +6,7 @@ const path = require('path') // import path
 const fs = require('fs') // import fs
 const multer = require('multer') // import multer
 var uploadsDir = __dirname + "/public/uploads";
-
+    
 setInterval(() => { //function to delelte the files after a while
     fs.readdir(uploadsDir, function (err, files) {
         files.forEach(function (file, index) {
